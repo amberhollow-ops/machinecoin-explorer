@@ -10,6 +10,11 @@ var express = require('express'),
     db = require('./lib/database'),
     package_metadata = require('./package.json');
 var app = express();
+app.use((req, res, next) => {
+  if (!['127.0.0.1:3001', 'localhost:3001'].includes(req.headers.host)) return res.status(403).send('Local explorer only');
+  next();
+});
+app.get('/local/status', require('./lib/local-status'));
 var apiAccessList = [];
 var viewPaths = [path.join(__dirname, 'views')]
 var pluginRoutes = [];

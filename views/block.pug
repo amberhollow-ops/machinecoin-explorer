@@ -68,6 +68,9 @@ block content
           if settings.api_page.public_apis.rpc.getblock.enabled == true
             a.d-none.d-md-block(href='/api/getblock?hash=' + block.hash, style='margin-left:auto;', data-bs-toggle='tooltip', data-bs-placement='top', title=settings.localization.view_raw_block_data)
               span.fa-solid.fa-circle-info(style='color: var(--bs-body-color);')
+      .px-3.py-2.d-md-none(style='overflow-wrap:anywhere')
+        strong.me-1 Block hash:
+        span=block.hash
       table#block-summary.table.table-bordered.summary-table.bottom-border-0.single-row-table(style='border-top:0;margin-top:0 !important;')
         thead
           tr(class=theadClasses)

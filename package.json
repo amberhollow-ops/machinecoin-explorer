@@ -41,7 +41,7 @@
     "jsonminify": "^0.4.2",
     "mongoose": "^9.2.4",
     "morgan": "^1.10.0",
-    "postman-request": "^2.88.1-postman.42",
+    "postman-request": "2.88.1-postman.50",
     "pug": "~3.0.3",
     "qr-image": "^3.2.0",
     "sass": "^1.86.3",
@@ -51,5 +51,11 @@
     "forever": "^4.0.3",
     "jasmine": "^6.1.0",
     "pm2": "^7.0.1"
+  },
+  "overrides": {
+    "postman-request": {
+      "qs": "6.16.1",
+      "uuid": "11.1.1"
+    }
   }
 }

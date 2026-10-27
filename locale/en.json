@@ -65,7 +65,7 @@
 
   // explorer view
   "ex_title": "{1} Block Explorer",
-  "ex_description": "A listing of all verified {1} transactions",
+  "ex_description": "Recent {1} transactions with indexed outputs. Other transactions remain searchable by hash.",
   "ex_search_title": "Search",
   "ex_search_button": "Search",
   "ex_search_message": "Search by block height, block hash, tx hash or address",
